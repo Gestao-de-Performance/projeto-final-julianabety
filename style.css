@@ -33,8 +33,7 @@ margin:2% 5%
 }
 
 section{
-    margin:4% 15%; }
-
+    margin:2% 15%; }
 
 /*fim cabeçalho*/
 
@@ -43,7 +42,18 @@ h1, h2, h3, span, p{
             color:#FFFFFF
 }
 
-.eu{
-    gap:50%;
+.minhaFoto{
+    position:relative;
+    left: 20%;
+    gap:40px;
+    
 }
 
+.inicio{
+    margin:5% 15%;
+}
+
+.textoApresentacao{
+    margin:12% 0;
+    display: flex;
+}
