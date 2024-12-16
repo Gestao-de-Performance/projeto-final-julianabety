@@ -1,16 +1,16 @@
 
 let botaoMenu = document.getElementById('botaoMenu')
 let menu = document.getElementById('menuMobile')
-let overlay= document.getElementById('overlayMenu')
+let overlay = document.getElementById('overlayMenu')
 
 botaoMenu.addEventListener('click', ()=>{
-    menu.classList.add('abrirMenu')
+    menu.classList.add('abrir-menu')
 })
 
-menuenu.addEventListener('click', ()=>{
-    menu.classList.remove('abrirMenu')
+menu.addEventListener('click', ()=>{
+    menu.classList.remove('abrir-menu')
 })
 
 overlay.addEventListener('click', ()=>{
-    menu.classList.remove('abrirMenu')
+    menu.classList.remove('abrir-menu')
 })

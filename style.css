@@ -127,15 +127,15 @@ header nav.menuDesktop ul li{
     position: fixed;
     top:0;
     right: 0;
-    z-index: 999999;
+    z-index: 99999;
     width:0%;
     overflow: hidden;
     transition: .5s;
 }
-.menuMobile.abrirMenu{
+.menuMobile.abrir-menu{
     width:70%;
 }
-.menuMobile.abrirMenu ~ .overlayMenu{
+.menuMobile.abrir-menu ~ .overlayMenu{
     display: block;
 }
 
