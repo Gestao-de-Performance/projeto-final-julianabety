@@ -1,0 +1,495 @@
+/* ESTILO GERAL */
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:"Monteserrat", sans-serif;    
+}
+
+:root{
+    --azul-escuro:#090A18;
+    --branco: #FFFFFF;
+    --cinza-escuro: #737373;
+    --cinza-claro:#D9D9D9;
+    --azul-claro:#B3EBF2;
+    }
+
+body{
+    background-color:#090A18;
+    height: 100vh;
+}
+
+.interface{
+    max-width: 1280px;
+    margin: 0 auto;
+    
+}
+
+.flex{
+    display: flex;
+}
+
+h2.titulo{
+    color:#FFFFFF;
+    font-size: 38px;
+    text-align: center;
+}
+
+h2.titulo span{
+    color: #77cbda;
+}
+
+a, h1, h2, h3, p, span{
+    color: #FFFFFF;
+}
+
+.botaoContato button{
+    padding: 10px 40px;
+    font-size: 18px;
+    font-weight: 600;
+    background-color: #D9D9D9;
+    border:0;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: .2s;
+    gap:10px;
+}
+
+button:hover, form .botaoEnviar input:hover{
+    box-shadow: 0px 0px 8px #d9d9d9b6;
+    transform: scale(1.05);
+}
+
+.botaoSocial button{
+    width: 60px;
+    height: 60px;
+    border-radius: 30px;
+    border:none;
+    background: #D9D9D9;
+    font-size: 20px;
+    cursor: pointer;
+    margin: 0 5px;
+    transition: .2s;
+}
+
+/* ESTILO DO CABECALHO */
+header{
+    padding: 40px 4%;
+}
+
+header >.interface{
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+   
+}
+
+header a{
+    color: #5c5c5c;
+    text-decoration:none;
+    font-weight: 100;
+    display: inline-block;
+    transition: .2s;
+}
+
+header nav.menuDesktop a:hover{
+    color:#FFFFFF;
+    transform: scale(1.05);
+}
+
+header nav ul{
+    list-style-type:none;
+}
+
+header nav.menuDesktop ul li{
+    display: inline-block;
+    padding: 0 40px;
+}
+
+/* ESTILO DO MENU MOBILE */
+.botaoAbrirMenu i{
+    color: #77cbda;
+    font-size: 40px;
+}
+
+.menuMobile .botaoFechar{
+    padding: 20px 5%;
+}
+
+.menuMobile .botaoFechar i{
+    color: #77cbda;
+    font-size: 30px;
+}
+
+.menuMobile{
+    background-color: #0000;
+    min-height: 100vh;
+    position: fixed;
+    top:0;
+    right: 0;
+    z-index: 999999;
+    width:0%;
+    overflow: hidden;
+    transition: .5s;
+}
+.menuMobile.abrirMenu{
+    width:70%;
+}
+.menuMobile.abrirMenu ~ .overlayMenu{
+    display: block;
+}
+
+.menuMobile nav ul{
+    text-align: right;
+}
+.menuMobile nav ul li a{
+    color: #242424;
+    font-size: 20px;
+    font-weight: 600;
+    padding: 20px 8%;
+    display: block;
+}
+.menuMobile nav ul li a:hover{
+    background-color: #B3EBF2;
+    color: #0000;
+}
+
+.overlayMenu{
+    background-color: #000000a7;
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top:0;
+    left:0;
+    z-index: 88888;
+    display: none;
+}
+
+/* ESTILIO DO TOPICO INICIO */
+section .inicio{  
+    padding: 40px 4%;
+    margin-top: 60px;
+}
+
+section .inicio .flex{
+gap:40px;
+align-items: center;
+justify-content: center;
+text-align: center;
+}
+
+.textoInicio .img-topo-site img{
+float: left;
+margin-bottom: 40px;
+}
+
+.inicio .textoInicio h1{
+    font-size: 38px;
+    line-height: 32px;
+    text-align: center;
+    display: flex;
+}
+.inicio .textoInicio h1 span{
+    color:#B3EBF2;
+}
+
+.inicio .textoInicio p{
+    font-size: 28px;
+    margin:40px 0;
+}
+
+.inicio .img-topo-site img{
+        position:relative;
+        animation: flutuar 2s ease-in-out infinite alternate;
+}
+
+@keyframes flutuar{
+    0%{
+        top:0;
+    }
+    100%{
+        top: 30px;
+    }
+}
+
+/* ESTILO DA SKILLS */
+
+section.especialidades{
+    padding: 80px 4%;
+}
+
+section.especialidades .flex{
+    display: flex;
+    justify-content: center;
+    gap:60px:
+}
+
+.especialidades .boxSkills{
+    color: #FFFFFF;
+    padding: 40px;
+    margin-top: 45px;
+}
+
+.especialidades .boxSkills .skills{
+    color:#FFFFFF;
+    margin: 50px;
+    padding: 30px;
+    display: inline-block;
+    justify-items: center;
+    align-items: center;  
+    border-radius: 20px;
+    transition: .2s;
+}
+
+.especialidades .boxSkills:hover{
+    transform: scale(1.05);
+    box-shadow: 0 0 8px #d9d9d97c;
+
+}
+
+.especialidades .boxSkills i{
+    font-size: 70px;
+    color: #B3EBF2;
+}
+
+.especialidades .boxSkills h3{
+    font-size: 20px;
+    margin: 15px 0;
+    text-align: center;
+    justify-content: center;
+}
+
+/* ESTILO DO SOBRE*/
+
+section .sobre{
+    padding: 80px 4%;
+    margin-top: 8%;
+}
+
+section .sobre .flex{
+    align-items: center;
+    gap: 100px;
+}
+
+.sobre .textoSobre{
+    color:#FFFFFF;
+}
+
+.sobre .textoSobre h2{
+    font-size: 40px;
+    line-height: 40px;
+    margin-bottom: 30px;
+}
+.sobre .textoSobre span{
+    color: #B3EBF2;
+    font-weight: 100px;
+}
+
+.sobre .textoSobre p{
+    margin: 10px 0;
+    padding: 20px 4%;
+    text-align: justify;
+    font-size: 28px;
+}
+
+
+/*ESTILO DO PORTIFOLIO*/
+
+section.portifolio {
+    padding: 80px 4%;
+    box-shadow: 0 0 40px 10px #ffffff3e;
+}
+
+section.portifolio .flex{
+    justify-content: space-around;
+    margin-top: 60px;
+}
+
+.img-port{
+    width: 360px;
+    height: 460px;
+    background-size: cover;
+    background-position: 100% 0;
+    transition: .8s;
+    cursor: pointer;
+    border-radius: 40px;
+    position: relative;
+}
+
+.img-port:hover{
+    background-position: 100% 100%;
+}
+
+.overlay{
+    position: absolute;
+    top:0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 40px;
+    background-color: #0000008d;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 24px;
+    font-weight: 600;
+    color: #FFFFFF;
+    opacity: 0;
+    transition: .5s;
+}
+
+.overlay:hover{
+    opacity: 1;
+}
+
+/*ESTILO DO FORMULARIO*/
+
+section.formulario{
+    padding: 80px 4%;   
+}
+
+form{
+    max-width: 500px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap:10px;
+    margin-top: 40px;
+}
+
+form input, form textarea{
+    width: 100%;
+    background-color: #242424;
+    border: 0;
+    outline: 0;
+    padding: 20px 15px;
+    border-radius: 15px;
+    color: #FFFFFF;
+    font-size: 18px;
+}
+
+form.textarea{
+    resize: none;
+    max-width: 200px;
+}
+
+form.botaoEnviar{
+    margin-top: 20px;
+}
+
+form .botaoEnviar input{
+    width: 120px;
+    background-color: #B3EBF2;
+    color: #242424;
+    font-weight: 700;
+    cursor: pointer;
+    transition: .2s;
+}
+
+/* ESTILO DO RODAPÉ */
+
+footer{
+    padding: 40px 4%;
+    box-shadow: 0 0 40px 10px #ffffff3e;
+}
+
+footer .flex{
+    justify-content: space-between;
+}
+
+footer .lineFooter{
+    padding: 20px 0;
+}
+
+footer .lineFooter p i{
+    color:#B3EBF2;
+    font-size: 22px;
+}
+
+.borda {
+   border-top:2px solid #B3EBF2;
+}
+
+footer .lineFooter p a{
+    color:#FFFFFF;
+}
+
+@media screen and (max-width: 1020px){
+    /* GERAIS */
+    .flex{
+        flex-direction: column;
+    }
+    .textoInicio .flex{
+        flex-direction: column-reverse;
+    }
+    
+    h2.titulo{
+        font-size: 30px;
+    }
+
+   
+    /* CABEÇALHO */
+    .menuDesktop, .botaoContato{
+        display: none;
+    }
+    /* TEXTO INICIO */
+    section.inicio{
+        padding: 20px 8%;
+    }
+    .inicio .img-topo-site img{
+        width: 90%;
+    }
+    section.textoInicio .flex{
+        gap: 50px;
+       
+    }
+    /* ESPECIALIDADES */
+    section.especialidades{
+        padding: 40px 15%;
+    }
+
+    /* SOBRE */
+    section .sobre{
+        padding: 100px 80%;
+    }
+    .sobre .textoSobre h2{
+        font-size: 30px;
+        line-height: 35px;
+        text-align: center;
+    }
+
+    .sobre .textoSobre p{
+        margin: 10px 0;
+        padding: 20px 4%;
+        text-align: justify;
+        font-size: 20px;
+    }
+    .botaoSocial{
+        text-align: center;
+        margin-bottom: 80px 4%;
+    }
+    .img-sobre{
+        width: 100%; 
+    }
+    /* PORTIFOLIO */
+    section.portifolio {
+        padding: 80px 8%;
+    }
+    .img-port{
+        width: 100%;
+        max-width: 360px;
+        margin:0 auto;
+    }
+    section.portifolio .flex{
+        gap:60px
+    }
+    /* RODAPÉ */
+    footer .flex{
+        flex-direction: column;
+        gap:30px;
+    }
+
+    footer .lineFooter{
+        text-align: center;
+    }
