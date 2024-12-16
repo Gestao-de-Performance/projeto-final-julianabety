@@ -52,6 +52,7 @@ a, h1, h2, h3, p, span{
     border-radius: 30px;
     cursor: pointer;
     transition: .2s;
+    gap:10px;
 }
 
 button:hover, form .botaoEnviar input:hover{
@@ -142,9 +143,9 @@ header nav.menuDesktop ul li{
     text-align: right;
 }
 .menuMobile nav ul li a{
-    color: #FFFFFF;
+    color: #242424;
     font-size: 20px;
-    font-weight: 300;
+    font-weight: 600;
     padding: 20px 8%;
     display: block;
 }
@@ -165,36 +166,39 @@ header nav.menuDesktop ul li{
 }
 
 /* ESTILIO DO TOPICO INICIO */
-
-section.inicio{
+section .inicio{  
     padding: 40px 4%;
+    margin-top: 60px;
 }
 
-section.textoInicio .flex{
-display: flex;
+section .inicio .flex{
+gap:40px;
 align-items: center;
-justify-content: left;
-gap: 90px;
-display: flex;
+justify-content: center;
+text-align: center;
+}
+
+.textoInicio .img-topo-site img{
+float: left;
+margin-bottom: 40px;
 }
 
 .inicio .textoInicio h1{
-    font-size: 30px;
-    line-height: 40px;
+    font-size: 38px;
+    line-height: 32px;
+    text-align: center;
+    display: flex;
 }
 .inicio .textoInicio h1 span{
     color:#B3EBF2;
 }
 
 .inicio .textoInicio p{
-    font-size: 20px;
+    font-size: 28px;
     margin:40px 0;
-
 }
 
 .inicio .img-topo-site img{
-    display: flex;
-    justify-content: space-around;
         position:relative;
         animation: flutuar 2s ease-in-out infinite alternate;
 }
